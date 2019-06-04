@@ -9,7 +9,7 @@ console.log(jediName('Eugene','Gian'));
 
 function beyond(num) {
   if(num === Infinity || num === -Infinity) {
-    console.log('And beyond')
+    console.log('And beyond');
   }
 
   else if(num === 0) {
@@ -26,3 +26,23 @@ function beyond(num) {
 }
 
 beyond(Infinity);
+
+function decode(word) {
+  if(word.charAt(0) === 'a') {
+    return word.charAt(1);   
+  }
+  else if(word.charAt(0) === 'b') {
+    return word.charAt(2);   
+  }
+  else if(word.charAt(0) === 'c') {
+    return word.charAt(3);   
+  }
+  else if(word.charAt(0) === 'd') {
+    return word.charAt(4);   
+  }
+  else {
+    return ' ';
+  }
+}
+
+decode('chicken');
