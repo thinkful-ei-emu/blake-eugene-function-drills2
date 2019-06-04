@@ -4,7 +4,7 @@ function jediName (first, last){
   return first.slice(0,3) + last.slice(0,2);
 }
 
-jediName(Blake, Lowrey);
+console.log(jediName('Blake', 'Lowrey'));
 
 function beyond (num){
   if (!isFinite(num)){
@@ -40,6 +40,8 @@ function decode(word) {
     return ' ';
   }
 }
+console.log(decode('cloolo'));
+
 function daysInMonth(month, leapYear) {
   switch (month) {
   case 'February':
@@ -64,6 +66,8 @@ function daysInMonth(month, leapYear) {
   }
 }
 
+console.log(daysInMonth('October'));
+
 function rockPaperScissors(playNum){
   const cpuPlay = Math.floor(Math.random() * 3) + 1;
   if ((playNum === 1 && cpuPlay === 3) || (playNum === 2 && cpuPlay === 1) || (playNum === 3 && cpuPlay === 2)){
@@ -78,6 +82,7 @@ function rockPaperScissors(playNum){
   else {
     throw Error;
   }
-
 }
+
+console.log(rockPaperScissors(1));
   
